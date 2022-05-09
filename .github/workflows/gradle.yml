@@ -34,11 +34,11 @@ jobs:
         arguments: build
     
     -
-        name: Login to DockerHub
-        uses: asmitabadekar/demo-app
-        with:
-          image: asmitabadekar/demo-app
-          registry: docker.io
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      name: Login to DockerHub
+      uses: asmitabadekar/demo-app
+      with:
+        image: asmitabadekar/demo-app
+        registry: docker.io
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
       
