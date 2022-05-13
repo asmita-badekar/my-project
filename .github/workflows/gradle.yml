@@ -37,7 +37,7 @@ jobs:
       name: build an dpush to docker
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: docker-hub-repo/image-name
+        image: asmitabadekar/demo-app
         registry: docker.io
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
